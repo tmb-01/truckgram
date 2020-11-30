@@ -1,0 +1,257 @@
+:root {
+    --main-color: #2a445e;
+    /*--main-color:#2Aa05E*/
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background-color: #f0f0f0 !important;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.main-bg-color {
+    background-color: var(--main-color) !important;
+}
+
+.main-border-color {
+    border: 1px solid var(--main-color) !important;
+}
+
+.my-input {
+    border: 1px solid lightgrey;
+}
+
+.my-input:hover {
+    border: 1px solid var(--main-color);
+}
+
+.my-input:focus-within {
+    outline: 2px auto var(--main-color);
+
+    /*border-radius: 10px;*/
+}
+
+.my-input:focus {
+    outline: 2px auto var(--main-color);
+
+    /*border-radius: 10px;*/
+}
+
+.my-input input::placeholder {
+    color: #a7a7a7;
+}
+
+.my-input::placeholder {
+    color: #a7a7a7;
+}
+
+.placeholder-color {
+    color: #a7a7a7;
+}
+
+.img-main-color-cover {
+    background-color: var(--main-color);
+    opacity: 0.6;
+}
+
+
+
+.go-right {
+    /*width:100px;*/
+    /*height: 100px;*/
+    /*background-color: blue;*/
+    animation-name: go-right-animation;
+    animation-duration: 0.5s;
+    /*animation-iteration-count: infinite;*/
+    animation-timing-function: linear;
+    /*animation-direction: alternate-reverse;*/
+
+}
+
+@keyframes go-right-animation {
+    0% {
+        /*transform: translateX(0);*/
+        left: 0;
+    }
+    100% {
+        left: -270px;
+        /*transform: translateX(-270);*/
+        display: none;
+    }
+}
+
+.come-right {
+    /*width:100px;*/
+    /*height: 100px;*/
+    /*background-color: blue;*/
+    animation-name: come-right-animation;
+    animation-duration: 0.5s;
+    /*animation-iteration-count: infinite;*/
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    /*display: none;*/
+    /*animation-direction: alternate-reverse;*/
+
+}
+
+@keyframes come-right-animation {
+    0% {
+        display: block;
+        right: -270px;
+        /*transform: translateX(270);*/
+
+    }
+    100% {
+        /*transform: translateX(0);*/
+        right: 0;
+        /*transform: translateX(0);*/
+    }
+}
+
+
+
+
+
+.go-back {
+    /*width:100px;*/
+    /*height: 100px;*/
+    /*background-color: blue;*/
+    animation-name: go-back-animation;
+    animation-duration: 0.5s;
+    /*animation-iteration-count: infinite;*/
+    animation-timing-function: linear;
+    /*animation-direction: alternate-reverse;*/
+
+}
+
+@keyframes go-back-animation {
+    0% {
+        /*transform: translateX(0);*/
+        display: block;
+        left: -270px;
+    }
+    100% {
+        left: 0;
+        /*transform: translateX(-270);*/
+        /*display: none;*/
+    }
+}
+
+.come-back {
+    /*width:100px;*/
+    /*height: 100px;*/
+    /*background-color: blue;*/
+    animation-name: come-back-animation;
+    animation-duration: 0.5s;
+    /*animation-iteration-count: infinite;*/
+    animation-timing-function: linear;
+    /*animation-delay: 0s;*/
+    /*display: none;*/
+    animation-direction: alternate-reverse;
+
+}
+
+@keyframes come-back-animation {
+    0% {
+        right: 0;
+        /*transform: translateX(270);*/
+
+    }
+    100% {
+        /*transform: translateX(0);*/
+        right: -270px;
+        display: none;
+        /*transform: translateX(0);*/
+    }
+}
+
+
+.fill-main-color{
+    fill: var(--main-color);
+}
+
+
+
+.my-scroll {
+}
+.my-scroll::-webkit-scrollbar {
+    width: 5px;
+//visibility: hidden;
+//opacity: 0;
+//color: transparent;
+}
+
+/* Track */
+.my-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+/* Handle */
+.my-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Handle on hover */
+.my-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.5);
+}
+
+
+.my-scroll:hover .my-scroll::-webkit-scrollbar-track{
+    visibility: visible;
+}
+
+
+.my-scroll:hover .my-scroll::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+.color-transparent{
+    color: transparent;
+}

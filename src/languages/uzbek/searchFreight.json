@@ -1,0 +1,19 @@
+{
+  "name": "Yukning nomi",
+  "direction": "Yo'nalish",
+  "from": "...dan",
+  "to": "...gacha",
+  "typeOfTruck": "Yuk mashinasining turi",
+  "tent": "Tent",
+  "ref":"Ref",
+  "date": "Yuklash vaqti",
+  "volume": "Hajmi",
+  "m": "m",
+  "weight": "Vazni",
+  "t": "t",
+  "currency": "Valyuta",
+  "price": "Narxi",
+  "message": "Xabaringiz",
+  "submit": "Junatish",
+  "driver": "Haydovchi"
+}
